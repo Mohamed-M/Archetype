@@ -13,7 +13,7 @@ The production folder contains the .html files the minified javascript file, and
 
 The SCSS partials should be imported into the development/scss/style.scss file.
 
-The font-size is set to 62.5% on the html tag selector (found in development/scss/_base.scss), so their is easier conversion from REM unit to pixel unit (i.e. 1rem == 10px). Body's font-size is set to 1.6rem (i.e. 16px) to counteract the 62.5% decrease in size.
+The font-size is set to 62.5% on the html tag selector (found in development/scss/_base.scss), so their is easier conversion from REM unit to pixel unit (i.e. 1rem == 10px). Body's font-size is set to 1.6rem (i.e. 16px) to counteract the 37.5% decrease in size.
 
 ## Folder Structure
 
