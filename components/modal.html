@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Archetype - Web Components</title>
+
+  <!-- Google Fonts - Lato & Slabo & Abril Factface -->
+  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Lato:300,400,400i,700,900|Slabo+27px" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  
+  <!-- MODAL -->
+  <section id="modal">
+    <div class="container">
+      <h1>Modal & Notificaton Bars</h1>
+
+      <hr>
+      
+      <section id="modal-notification">
+
+        <a class="modalbtn" id="modalBtn">Open Modal</a>
+
+        <section id="modalSimple" class="modal-simple">
+          <div class="modal-content">
+            
+            <div class="modal-header">
+              <span id="closeBtn" class="closebtn">&times;</span>
+              <h2>Header</h2>
+            </div><!-- .modal-header-->
+            
+            <div class="modal-body">
+              <p>Body</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis reiciendis doloribus quaerat facere expedita? Quasi.</p>
+            </div><!-- .modal-body -->
+
+            <div class="modal-footer">
+              <h3>Footer</h3>
+            </div><!-- .modal-footer -->
+
+          </div><!-- .modal-content -->
+        </section><!-- #modalSimple .modal-simple -->
+      </section><!-- #modal-notification -->
+    </div><!-- .container -->
+  </section>
+
+  <!-- Modal JavaScript File -->
+  <script type="application/javascript" src="../js/components/modal.js"></script>
+</body>
+</html>

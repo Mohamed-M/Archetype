@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Archetype - Web Components</title>
+
+  <!-- Google Fonts - Lato & Slabo & Abril Factface -->
+  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Lato:300,400,400i,700,900|Slabo+27px" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+ <!-- SLIDESHOW -->
+ <section id="slideshow">
+    <div class="container">
+      <h1>Slideshow</h1>
+
+      <hr>
+
+      <div class="cycle-slideshow"
+      data-cycle-caption-template=" This is an image of {{alt}} in {{title}}. It is slide no. {{slideNum}} of {{slideCount}}."
+      data-cycle-starting-slide="0"
+
+      data-cycle-fx="scrollHorz"
+      data-cycle-speed="1500"
+      data-cycle-timeout="1500"
+
+      data-cycle-manual-fx="fade"
+      data-cycle-manual-speed="500"
+
+      data-cycle-pager-event="mouseover"
+      >
+
+        <div class="cycle-pager"></div>
+        <div class="cycle-caption"></div>
+        <div class="cycle-prev"><i class="fa fa-caret-left"></i></div>
+        <div class="cycle-next"><i class="fa fa-caret-right"></i></div>
+
+        <img src="../img/slideshow/sh1.jpg" alt="Dowtown Beijing" title="China">
+        <img src="../img/slideshow/sh2.jpg" alt="Venice Beach" title="Los Angeles">
+        <img src="../img/slideshow/sh3.jpg" alt="Coney Island Station" title="Brooklyn">
+        <img src="../img/slideshow/sh4.jpg" alt="Tribeca" title="Manhattan">
+      </div> <!-- .cycle-slideshow -->
+    </div><!-- .container -->
+  </section><!-- #slideshow -->
+
+
+  <!-- JavaScript Libraries: jQuery & cycle2 -->
+  <script type="application/javascript" src="../js/lib/jquery.js"></script>
+  <script type="application/javascript" src="../js/lib/cycle2.js"></script>
+</body>
+</html>
