@@ -1,0 +1,53 @@
+/****************************************************************************
+** 
+** 4. Social Media
+**
+****************************************************************************/
+
+#twitter-tweet {
+  display: flex;
+  flex-direction: column;
+
+  margin: $baseline auto;
+  max-width: 60rem;
+
+  color: #fff;
+
+  > blockquote {
+    margin: 0;
+    padding: 2rem;
+    border-left: none;
+
+    background-color: #5aaeee;
+    
+    color: #fff;
+    font-size: 1.6rem;
+  }
+
+  .twitter-share {
+    align-self: flex-end;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    background-color: lighten($medium-gray, 25%);
+  }
+}
+
+.twitter-share {
+  > .tweetthis,
+  >.twitter-bird {
+    display: block;
+
+    padding: 1.5rem;
+
+    color: #fff;
+    font-size: 2rem;
+  }
+  
+  > .twitter-bird {
+    background-color:#5aaeee;
+  }
+}

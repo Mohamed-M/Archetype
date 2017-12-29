@@ -1,0 +1,80 @@
+/********************************************************
+* 
+** Push Menu SCSS
+*
+********************************************************/
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1.25rem;
+  position: relative;
+}
+
+.site-title {
+  margin-left: 6.25rem;
+  font-size: 1rem;
+}
+
+.nav-toggle {
+  position: absolute;
+  top: 1.875rem;
+  cursor: pointer;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav li {
+  list-style: none;
+}
+
+.main-navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #222;
+  text-align: center;
+  transform: translateX(-100%);
+}
+
+.main-navigation.open {
+  transform: translateX(0);
+}
+
+
+.main-navigation .nav-toggle {
+  right: 5%;
+  top: 5%;
+}
+
+.main-navigation ul {
+  margin: 0;
+  padding: 0;
+}
+
+.main-navigation ul a {
+  padding: 0.625rem 1.25rem;
+  display: block;
+}
+
+.main-navigation ul a:hover {
+  background-color: #333;
+}
+
+.wrapper {
+  transform: translateX(0%);
+  transition: transform 0.6s ease;
+}
+
+.wrapper.open {
+  transform: translateX(100%);
+}
+
+.outer-wrapper {
+  overflow: hidden;
+}

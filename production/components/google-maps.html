@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Archetype - Web Components</title>
+
+  <!-- Google Fonts - Lato & Slabo & Abril Factface -->
+  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Lato:300,400,400i,700,900|Slabo+27px" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+  <!-- Google Maps -->
+  <section id="google-maps">
+    <div class="container">
+      <h1>Google Maps</h1>
+
+      <hr>
+
+      <div id="map"></div>
+
+    </div>
+    <!-- .container -->
+  </section>
+
+  <!-- Google Maps API. I'm using my own key please use your own, by signing up at google -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCHBiVt85pmyFytrxSJLfa5hxmPxDwjKdE&callback=initMap" async
+    defer></script>
+
+  <!-- Main script -->
+  <script src="../js/components/google-maps.js"></script>
+</body>
+
+</html>

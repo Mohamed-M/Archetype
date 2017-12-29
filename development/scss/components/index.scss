@@ -1,0 +1,53 @@
+.page {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: auto;
+
+  > .main-nav {
+    padding: 2rem;
+    border-right: .1rem solid #ccc;
+    border-bottom: .1rem solid #ccc;
+
+    background-color: #e5e5e5;
+  }
+
+  > .main-content {
+    padding: 2rem;
+  }
+}
+
+.main-nav {
+  > .btn {
+    display: block;
+    margin: 1rem auto;
+
+    color: $medium-gray;
+    font-family: $font-secondary;
+    font-weight: 300;
+
+    transition: all .1s ease-in-out;
+
+    &:hover,
+    &:focus {
+      color: #aaa;
+    }
+  }
+
+  > .github {
+    display: block;
+    padding: 1.5rem 2.5rem;
+    margin-top: 2rem;
+
+    background-color: $greensea;
+
+    color: #fff;
+    text-align: center;
+
+    transition: all .2s ease-in-out;
+
+    &:hover,
+    &:focus {
+      background-color: darken($greensea, 6.5%);
+    }
+  }
+}

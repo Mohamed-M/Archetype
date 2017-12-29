@@ -1,0 +1,99 @@
+/****************************************************************************
+** 
+** 3.Cards & Hero
+**
+****************************************************************************/
+
+.card-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+
+  margin: $baseline auto;
+  max-width: 120rem;
+
+  background-color: #eee;
+
+  > .feature-card {
+    width: 40rem;
+    margin: 4rem 2rem;
+  }
+}
+
+.feature-card {
+  border: .1rem solid $medium-gray;
+  background-color: #fff;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  > .image {
+    display: block;
+    margin: 0 auto;
+  }
+
+  transition: all .2s ease-in-out;
+  
+  &:hover {
+    transform: scale(1.05);
+    transform-style: preserve-3d;
+  }
+}
+
+.card-footer {
+  padding: 1rem;
+    
+  background-color: #fff;
+
+  text-align: center;
+
+  > .description {
+    margin: 1rem 0 1rem;
+
+    font-size: 2.8rem;
+    font-weight: $font-weight-light;
+  }
+
+  > .action {
+    display: inline-block;
+    padding: .75rem 1rem;
+    border: 1px solid $greensea;
+
+    background-color: $greensea;
+
+    color: $light-gray;
+
+    cursor: pointer;
+
+    transition: all .2s ease-in-out;
+
+      &:hover {
+        background-color: darken($greensea, 10%);
+      }
+    }
+
+  > .actioncart {
+      @extend .action;
+
+      border: 1px solid $greensea;
+
+      color: $greensea;
+
+      background-color: $light-gray;
+
+      &:hover {
+        background-color: darken($light-gray, 10%);
+        color: $greensea;;
+      }
+    }
+
+  &.-redtop { border-top: .4rem solid darkred; }
+  &.-purpletop { border-top: .4rem solid purple; }
+  &.-orangetop { border-top: .4rem solid orange; }
+}
+
+.feature-banner {
+  max-width: 120rem;
+}

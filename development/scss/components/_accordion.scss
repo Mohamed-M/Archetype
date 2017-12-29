@@ -1,0 +1,38 @@
+/****************************************************************************
+** 
+** Accordion
+**
+****************************************************************************/
+
+.accordion {
+  border: .1rem solid #ccc;
+}
+
+.accordion-element {
+  > .accordion-element-title {
+      display: block;
+
+      padding: 1.5rem;
+      border-bottom: .1rem solid #ccc;
+
+      background-color: lighten(#c1cacd, 15%);
+
+      color: $dark-gray;
+
+      &:hover,
+      &:focus,
+      &:active {
+        background-color: #333;
+
+        color: #fff;
+      }
+    }
+  > .accordion-element-content {
+      display: none;
+      padding: 1.5em;
+    
+      p {
+        margin: 0;
+      }
+    }
+}

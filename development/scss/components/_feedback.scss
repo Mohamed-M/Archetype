@@ -1,0 +1,57 @@
+/****************************************************************************
+** 
+** Feedback
+**
+****************************************************************************/
+
+[class^="alert-"] {
+	border: .1rem solid;
+	border-top-width: .5rem;
+
+	margin: $baseline 0;
+	padding: 1.5rem;
+
+	> p {
+		margin: 0;
+	}
+}
+
+.alert-information {
+	border-color: $info;
+
+	background-color: lighten( $info, 45% );
+
+	> p {
+		color: $info;
+	}
+}
+
+.alert-error {
+	border-color: $danger;
+
+	background-color: lighten( $danger, 45% );
+
+	> p {
+		color: $danger;
+	}
+}
+
+.alert-warning {
+	border-color: $warning;
+
+	background-color: lighten( $warning, 45% );
+
+	> p {
+		color: $warning;
+	}
+}
+
+.alert-success {
+	border-color: $success;
+
+	background-color: lighten( $success, 45% );
+
+	> p {
+		color: $success;
+	}
+}

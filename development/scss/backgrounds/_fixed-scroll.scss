@@ -1,0 +1,60 @@
+/****************************************************************************
+** 
+** Fixed Scroll Background Effect
+**
+****************************************************************************/
+
+#background-effects {
+  position: relative;
+  margin: 4rem auto;
+}
+
+// Fixed Scroll
+.fs-img1,
+.fs-img2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+
+  opacity: 0.8;
+}
+
+@media #{$small} {
+  .fs-img1,
+  .fs-img2 {
+    margin-bottom: $baseline;
+    min-height: 60rem;
+
+    background-attachment: fixed;
+  }
+
+  .fs-img1 {      
+    background-image: url("../img/background/desert.jpeg");
+
+
+  }
+  .fs-img2 {
+    background-image: url("../img/background/space.jpg");
+  }
+
+  .fs-text {
+    padding: 2rem 3rem;
+    border: .1rem solid $light-gray;
+
+    background-color: rgba(0,0,0,.5);
+
+
+    text-align: center;
+    color: $light-gray;
+    font-size: 2.7rem;
+    letter-spacing: .8rem;
+    text-transform: uppercase;
+  }
+}

@@ -1,0 +1,67 @@
+/********************************************************
+* 
+** Slide Menu SCSS
+*
+********************************************************/
+
+.slide-menu {
+  background-color: $dark-gray;
+  color: #eee;
+  padding: 1.25rem;
+  position: relative;
+  
+  > .title {
+    margin-left: 6.25rem;
+    font-size: 2.2rem;
+  }
+}
+  
+.nav-toggle {
+  position: absolute;
+  top: 1rem;
+  cursor: pointer;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav li {
+  list-style: none;
+}
+
+.main-navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #222;
+  text-align: center;
+  transform: translateX(-100%);
+  transition: transform 0.6s ease;
+}
+
+.main-navigation.open {
+  transform: translateX(0);
+}
+
+.main-navigation .nav-toggle {
+  right: 5%;
+  top: 5%;
+}
+
+.main-navigation ul {
+  margin: 0;
+  padding: 0;
+}
+
+.main-navigation ul a {
+  padding: 0.625rem 1.25rem;
+  display: block;
+}
+
+.main-navigation ul a:hover {
+  background-color: #333;
+}

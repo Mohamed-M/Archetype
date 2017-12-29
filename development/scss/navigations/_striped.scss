@@ -1,0 +1,117 @@
+/****************************************************************************
+** 
+** Striped Navigation
+**
+****************************************************************************/
+
+.striped-nav {
+  display: flex;
+  flex-flow: column;
+
+  width: $container-default-width;
+  height: 70vh;
+  margin: 1rem auto;
+
+  @media #{$medium} {
+    flex-flow: row;
+  }
+
+  > .striped-items {
+    flex: 1;
+    position: relative;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    color: $light-gray;
+
+    transition: all .4s ease-in-out;
+  }
+
+  > .one {
+    background-image: url(../img/navigation/blueshoes.jpg);
+    background-color: transparent;
+    margin-bottom: 1rem;
+  }
+
+  > .two {
+    background-image: url(../img/navigation/greyshoes.jpg);
+    background-color: transparent;
+    margin-bottom: 1rem;
+  }
+
+  > .striped-items:hover,
+  > .striped-items:focus {
+    @media #{$medium} {
+      flex-grow: 2;
+    }
+  }
+}
+
+.striped-items {
+
+  > .overlay {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    padding: 0 1rem;
+    background-color: rgba(0,0,0,.7);
+
+    transition: background-color .4s ease-in-out;
+  }
+
+  &:hover > .overlay {
+    @media #{$medium} {
+      background-color: rgba(0,0,0,.9);
+    }
+  }
+
+  &:hover .overlay-inner * {
+    visibility: visible;
+    opacity: 1;
+    transform: none;
+    transition: all .3s .3s;
+  }
+
+  .overlay-inner * {
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+
+    @media #{$medium} {
+      visibility: hidden;
+      opacity: 0;
+      transform-style: preserve-3d;
+    }
+  }
+
+  .overlay-inner h2 {
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
+
+    @media #{$medium} {
+      margin-bottom: 0;
+      font-size: 4.4rem;
+      transform: translate3d(0, -6rem, 0);
+    }
+  }
+
+  .overlay-inner p,
+  .overlay-inner span {
+    @media #{$medium} {
+      transform: translate3d(0, 6rem, 0);
+    }
+  }
+}
+
+

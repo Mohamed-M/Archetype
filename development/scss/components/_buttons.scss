@@ -1,0 +1,201 @@
+/****************************************************************************
+** 
+** Buttons
+**
+****************************************************************************/
+
+button,
+.btn,
+a.btn {
+	border: 0;
+
+	background-color: $btn-default-bg;
+
+	color: $btn-default-text-color;
+	cursor: pointer;
+
+	line-height: 1;
+	font-family: inherit;
+	font-style: inherit; 
+	text-decoration: none;
+
+	display: inline-block;
+	padding: .75em 1.5em;
+
+	transition: all .2s ease-in-out;
+
+	&:hover {
+		background-color: $btn-default-text-color;
+
+		color: #fff;
+	}
+
+	&:active {
+		background-color: lighten( $btn-default-text-color, 15% );
+
+	}
+
+	&:focus {
+		outline: none;
+  }
+}
+
+.btn-small {
+	@extend .btn;
+
+	font-size: $btn-small-font-size;
+}
+
+.btn-large {
+	@extend .btn;
+
+	font-size: $btn-large-font-size;
+	font-weight: bold;
+}
+
+.btn-primary,
+.btn-success,
+.btn-info,
+.btn-warning,
+.btn-danger {
+  @extend .btn;
+
+  color: $btn-primary-text-color
+}
+
+.btn-primary {
+
+  background-color: $btn-primary-bg;
+  
+  &:hover,
+  &:focus { background-color: darken($btn-primary-bg, 15%); }
+
+  &.-ghost {
+    border: .1rem solid $btn-primary-bg;
+    background: none;
+
+    color: $btn-primary-bg;
+
+    &:hover,
+    &:focus { 
+      background-color: $btn-primary-bg;  
+    
+      color: $btn-primary-text-color;
+    }
+  }
+
+}
+
+.btn-success {
+  
+    background-color: $btn-success-bg;
+  
+    
+  &:hover,
+  &:focus { background-color: darken($btn-success-bg, 15%); }
+  
+  &.-ghost {
+    border: .1rem solid $btn-success-bg;
+    background: none;
+
+    color: $btn-success-bg;
+
+    &:hover,
+    &:focus { 
+      background-color: $btn-success-bg;  
+    
+      color: $btn-primary-text-color;
+    }
+  }
+}
+
+.btn-info {
+  
+    background-color: $btn-info-bg;
+  
+    
+  &:hover,
+  &:focus { background-color: darken($btn-info-bg, 15%); }
+  
+  &.-ghost {
+    border: .1rem solid $btn-info-bg;
+    background: none;
+
+    color: $btn-info-bg;
+
+    &:hover,
+    &:focus { 
+      background-color: $btn-info-bg;  
+    
+      color: $btn-primary-text-color;
+    }
+  }
+}
+
+.btn-warning {
+  
+  background-color: $btn-warning-bg;
+  
+  &:hover,
+  &:focus { background-color: darken($btn-warning-bg, 15%); }
+
+  
+  &.-ghost {
+    border: .1rem solid $btn-warning-bg;
+    background: none;
+
+    color: $btn-warning-bg;
+
+    &:hover,
+    &:focus { 
+      background-color: $btn-warning-bg;  
+    
+      color: $btn-primary-text-color;
+    }
+  }
+}
+
+.btn-danger {
+	@extend .btn;
+  
+  background-color: $btn-danger-bg;
+
+  color: $btn-primary-text-color;
+    
+  &:hover,
+  &:focus { background-color: darken($btn-danger-bg, 15%); }
+  
+  &.-ghost {
+    border: .1rem solid $btn-danger-bg;
+    background: none;
+
+    color: $btn-danger-bg;
+
+    &:hover,
+    &:focus { 
+      background-color: $btn-danger-bg;  
+    
+      color: $btn-primary-text-color;
+    }
+  }
+}
+
+.btn-disabled {
+  @extend .btn;
+
+  border: .1rem solid #aaa;
+
+  opacity: 0.5;
+  background-color: $light-gray;
+
+  color: $medium-gray;
+    
+  &:hover,
+  &:focus { 
+    background-color: $light-gray;
+
+    color: $medium-gray;
+    
+    cursor: not-allowed; 
+  }
+}

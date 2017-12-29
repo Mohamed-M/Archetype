@@ -1,0 +1,41 @@
+/****************************************************************************
+** 
+** Main Stylesheet
+**
+****************************************************************************/
+
+@import 'components/normalize';
+
+@import 'variables';
+@import 'base';
+@import 'helpers';
+
+// Navigation
+@import 'navigations/dropdown';
+@import 'navigations/fixed-transparent';
+@import 'navigations/shrinking-navbar';
+@import 'navigations/striped';
+@import 'navigations/slide';   
+@import 'navigations/push';   
+
+// Backgrounds
+@import 'backgrounds/fixed-scroll';
+@import 'backgrounds/parallax';
+@import 'backgrounds/video';
+
+// Components
+@import 'components/index';
+@import 'components/slideshow';
+@import 'components/grid';
+@import 'components/cards';
+@import 'components/social-media';
+@import 'components/modal-notification';
+@import 'components/pricing-tables';
+@import 'components/tabs';
+@import 'components/accordion';
+@import 'components/icons-and-animations';
+@import 'components/buttons';
+@import 'components/google-maps';
+@import 'components/form';
+@import 'components/feedback';
+

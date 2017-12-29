@@ -1,0 +1,27 @@
+/****************************************************************************
+** 
+** Helpers, Functions, Mixins, Containers
+**
+****************************************************************************/
+
+.container {
+  margin: $spacing-default auto;
+  width: $container-default-width;
+  max-width: $container-max-width;
+}
+
+
+// Clearfix
+%clearfix:before,
+%clearfix:after {
+  content: "";
+  display: table;
+}
+
+%clearfix:after {
+  clear: both;
+}
+
+%clearfix {
+  *zoom: 1;
+}
