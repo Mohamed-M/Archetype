@@ -1,32 +1,98 @@
 # Archetype Web Components
 
-View it at: https://mohamed-m.github.io/archetype/
+![Archetype](https://imgur.com/wj7m83y.jpg)
+
+View it at:   https://mohamed-m.github.io/Archetype/
+
+A web components library that provides UI components like navigations, buttons, effects, and widgets. It written in a semantic class based structure adhering to the [RSCSS](https://github.com/rstacruz/rscss) (Reasonable System for CSS Stylesheet Structure) methodolgy. It uses ES6/ES2015 syntax and doesn't require jQuery (for most components). It was built using [Infrastructure](https://github.com/Mohamed-M/Infrastructure); my Gulp/Sass/PostCSS build system.
+
+## Guide
+All SCSS and JavaScript code should be done in the development folder. 
+
+The production folder contains the .html files the minified javascript file, and the compiled css file.
+
+The SCSS partials should be imported into the development/scss/style.scss file.
+
+The font-size is set to 62.5% on the html tag selector (found in development/scss/_base.scss), so their is easier conversion from REM unit to pixel unit (i.e. 1rem == 10px). Body's font-size is set to 1.6rem (i.e. 16px) to counteract the 62.5% decrease in size.
+
+## Folder Structure
+
+```
+.gitignore
+gulpfile.js
+package.json
+README.md
+development/
+  js/
+    main.js
+    components/
+  scss/
+    style.scss
+    _base.scss
+    _helpers.scss
+    _variables.scss
+    backgrounds/
+      _fixed-scroll.scss
+      _parallax.scss
+      _video.scss
+    components/
+      _accordion.scss
+      _buttons.scss
+      _cards.scss
+      _feedback.scss
+      _form.scss
+      _google-maps.scss
+      _grid.scss
+      _modal-notification.scss
+      _normalize.scss
+      _pricing-tables.scss
+      _slideshow.scss
+      _social-media.scss
+      _tabs.scss
+      _icons-and-animations.scss
+    navigations/
+      _dropdown.scss
+      _fixed-transparent.scss
+      _push.scss
+      _shrinking-navbar.scss
+      _slide.scss
+      _striped.scss
+production/
+  index.html
+  css/
+    style.css
+    lib/
+  img/
+  js/
+    main.js
+    lib/
+  backgrounds/
+    fixed-scroll.html
+    parallax.html
+  components/
+    accordion.html
+    cards.html
+    grid.html
+    icons-and-animations.html
+    modal.html
+    pricing-tables.html
+    slideshow.html
+    social-media.html
+    tabs.html
+    typoraphy.html
+```
+
 
 ## Getting Started
 
-These instructions will get you a copy of the system up and running on your local machine for development.
+These instructions will get you a copy up and running on your local machine for development.
 
 ### Prerequisites
 
 - Node Package Manager (NPM)
 - Git
 - Command Line Interface (CLI)
-
-### Built With
-
-* [PostCSS](https://github.com/postcss/postcss) - A CSS Preprocessor used for transforming styles with JS plugins. Plugins used in this project:
-  * cssnext ( + autoprefixer)
-  * cssnano
-  * gulp
-  * gulp-postcss
-  * gulp-webserver
-  * postcss-animation
-  * sass
-  * lost
-
-* [Gulp](http://gulpjs.com/) -  A toolkit for automating painful or time-consuming tasks in your development workflow.
-
-* [Sass](http://sass-lang.com/) - Sass is an extension of CSS that adds power and elegance to the basic language. It allows you to use variables, nested rules, mixins, inline imports, and more, all with a fully CSS-compatible syntax.
+- Command Line Utility for Gulp (Gulp-Cli)
 
 
 ### Installation
@@ -41,8 +107,8 @@ Run the NPM installer, which will run the package.json file and install all the 
 npm install
 ```
 
-Run the Gulp process to process the CSS, and open up a web server with live reload.
+Run the npm script to process the files, and open up a web server with Browsersync.
 
 ```
-gulp
+npm run start
 ```
