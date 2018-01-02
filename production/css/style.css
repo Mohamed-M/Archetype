@@ -569,8 +569,10 @@ img {
 ********************************************************/
 .fixed-transparent {
   background-color: #fff;
-  opacity: .3;
+  opacity: .7;
   position: fixed;
+  right: 20px;
+  right: 2rem;
   padding: 25px 10px;
   padding: 2.5rem 1rem;
   border-radius: .2rem;
@@ -1516,61 +1518,6 @@ nav li {
 
 /****************************************************************************
 ** 
-** ?) Pricing Tables
-**
-****************************************************************************/
-#pricing-tables {
-  margin: 16px auto;
-  margin: 1.6rem auto;
-  margin-bottom: 100px;
-  margin-bottom: 10rem; }
-  #pricing-tables > .col-4 {
-    padding: 10px;
-    padding: 1rem; }
-
-.price-box {
-  border: 1px solid #404040;
-  border: 0.1rem solid #404040;
-  background-color: #fff;
-  color: #404040;
-  -webkit-transition: 0.3s;
-  transition: 0.3s; }
-  .price-box > li {
-    padding: 20px;
-    padding: 2rem;
-    border-bottom: 1px solid #eee;
-    border-bottom: .1rem solid #eee;
-    text-align: center; }
-  .price-box > .header {
-    background-color: #111;
-    color: #fff;
-    font-size: 30px;
-    font-size: 3rem; }
-  .price-box > .emph {
-    background-color: #f4f4f4;
-    font-size: 20px;
-    font-size: 2rem; }
-
-.price-box:hover,
-.price-box:focus,
-.price-box.best,
-.price-box.best:hover {
-  -webkit-box-shadow: 0 1rem 1.5rem 0 #7f7f7f;
-          box-shadow: 0 1rem 1.5rem 0 #7f7f7f; }
-
-.emph > .button {
-  border: none;
-  padding: 10px 15px;
-  padding: 1rem 1.5rem;
-  background-color: #27ae60;
-  color: #fff;
-  font-size: 18px;
-  font-size: 1.8rem;
-  text-align: center;
-  text-decoration: none; }
-
-/****************************************************************************
-** 
 ** Tabs
 **
 ****************************************************************************/
@@ -1642,44 +1589,6 @@ nav li {
   padding: 1.5em; }
   .accordion-element > .accordion-element-content p {
     margin: 0; }
-
-[class^="icon-"] {
-  border: 1px solid #ccc;
-  border: .1rem solid #ccc;
-  height: 48px;
-  height: 4.8rem;
-  width: 48px;
-  width: 4.8rem;
-  padding: 4px;
-  padding: .4rem;
-  margin-bottom: 16px;
-  margin-bottom: 1.6rem;
-  text-align: center; }
-  [class^="icon-"] i {
-    line-height: 2.5em; }
-
-.icon-circle {
-  border-radius: 100%; }
-
-.icon-rounded {
-  border-radius: .5rem; }
-
-.icon-large {
-  font-size: 150%; }
-
-.icon-huge {
-  font-size: 250%; }
-
-#demo-animations > div {
-  display: block;
-  max-width: 50%;
-  padding: 20px;
-  padding: 2rem;
-  margin-bottom: 10px;
-  margin-bottom: 1rem;
-  text-align: center;
-  color: #eee;
-  background-color: #27ae60; }
 
 /****************************************************************************
 ** 
