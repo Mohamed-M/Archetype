@@ -608,7 +608,7 @@ img {
   width: 100%;
   padding: 10px 20px;
   padding: 1rem 2rem;
-  background-color: #f1c40f; }
+  background-color: #f7f7f7; }
   .shrinking-navbar > .shrinking-menu {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -629,10 +629,10 @@ img {
       padding: 2rem 4rem;
       margin: 20px 0 0 20px;
       margin: 2rem 0 0 2rem;
-      border: 1px solid #404040;
-      border: 0.1rem solid #404040;
-      background-color: #27ae60;
-      color: #404040;
+      border: 1px solid #5cace2;
+      border: 0.1rem solid #5cace2;
+      background-color: #e5e5e5;
+      color: #5cace2;
       font-size: 20px;
       font-size: 2rem;
       text-transform: uppercase;
