@@ -5,25 +5,24 @@
 ********************************************************/
 
 header {
-  background-color: #333;
-  color: #fff;
-  padding: 1.25rem;
   position: relative;
-}
+  padding: 1.25rem;
 
-.site-title {
-  margin-left: 6.25rem;
-  font-size: 1rem;
-}
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 
-.nav-toggle {
-  position: absolute;
-  top: 1.875rem;
-  cursor: pointer;
+  background-color: $light-gray;
+  color: $dark-gray;
+  
+  > .title {
+    margin: 0 0 0 2rem;
+    font-size: 2.4rem;
+  }
 }
 
 a {
-  color: #fff;
+  color: $light-gray;
   text-decoration: none;
 }
 
@@ -37,7 +36,7 @@ nav li {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #222;
+  background-color: $dark-gray;
   text-align: center;
   transform: translateX(-100%);
 }
@@ -50,6 +49,8 @@ nav li {
 .main-navigation .nav-toggle {
   right: 5%;
   top: 5%;
+  
+  color: $light-gray;
 }
 
 .main-navigation ul {
