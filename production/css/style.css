@@ -796,21 +796,27 @@ img {
 *
 ********************************************************/
 .slide-menu {
-  background-color: #404040;
-  color: #eee;
+  position: relative;
   padding: 12.5px;
   padding: 1.25rem;
-  position: relative; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #e5e5e5;
+  color: #404040; }
   .slide-menu > .title {
-    margin-left: 62.5px;
-    margin-left: 6.25rem;
-    font-size: 22px;
-    font-size: 2.2rem; }
+    margin: 0 0 0 20px;
+    margin: 0 0 0 2rem;
+    font-size: 24px;
+    font-size: 2.4rem; }
 
 .nav-toggle {
-  position: absolute;
-  top: 10px;
-  top: 1rem;
   cursor: pointer; }
 
 a {
@@ -861,26 +867,28 @@ nav li {
 *
 ********************************************************/
 header {
-  background-color: #333;
-  color: #fff;
+  position: relative;
   padding: 12.5px;
   padding: 1.25rem;
-  position: relative; }
-
-.site-title {
-  margin-left: 62.5px;
-  margin-left: 6.25rem;
-  font-size: 10px;
-  font-size: 1rem; }
-
-.nav-toggle {
-  position: absolute;
-  top: 18.75px;
-  top: 1.875rem;
-  cursor: pointer; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #e5e5e5;
+  color: #404040; }
+  header > .title {
+    margin: 0 0 0 20px;
+    margin: 0 0 0 2rem;
+    font-size: 24px;
+    font-size: 2.4rem; }
 
 a {
-  color: #fff;
+  color: #e5e5e5;
   text-decoration: none; }
 
 nav li {
@@ -892,7 +900,7 @@ nav li {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #222;
+  background-color: #404040;
   text-align: center;
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%); }
@@ -903,7 +911,8 @@ nav li {
 
 .main-navigation .nav-toggle {
   right: 5%;
-  top: 5%; }
+  top: 5%;
+  color: #e5e5e5; }
 
 .main-navigation ul {
   margin: 0;
@@ -1092,7 +1101,9 @@ nav li {
     background-color: #e5e5e5; }
   .page > .main-content {
     padding: 20px;
-    padding: 2rem; }
+    padding: 2rem;
+    margin: 0 auto;
+    text-align: center; }
 
 .main-nav > .btn, .main-nav > .btn-small, .main-nav > .btn-large, .main-nav > .btn-primary, .main-nav >
 .btn-success, .main-nav >
