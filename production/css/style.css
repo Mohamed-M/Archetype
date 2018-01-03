@@ -551,8 +551,8 @@ img {
   display: block;
   padding: 10px 20px;
   padding: 1rem 2rem;
-  background-color: #27ae60;
-  color: #e5e5e5;
+  background-color: #e5e5e5;
+  color: #404040;
   font-family: Lato, Helvetica, "Helvetica Neue", "Open Sans", sans-serif;
   font-weight: 300;
   font-size: 30px;
@@ -560,7 +560,7 @@ img {
   text-decoration: none; }
 
 .dropdown-nav a:hover {
-  background-color: #1e8449; }
+  background-color: #cccccc; }
 
 /********************************************************
 * 
