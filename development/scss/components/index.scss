@@ -23,7 +23,7 @@
     display: block;
     margin: 1rem auto;
 
-    color: $medium-gray;
+    color: $dark-gray;
     font-family: $font-secondary;
     font-weight: 300;
 
@@ -31,7 +31,7 @@
 
     &:hover,
     &:focus {
-      color: #aaa;
+      color: $light-gray;
     }
   }
 
