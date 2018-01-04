@@ -1113,7 +1113,7 @@ nav li {
   display: block;
   margin: 10px auto;
   margin: 1rem auto;
-  color: #7f7f7f;
+  color: #404040;
   font-family: "Slabo 27px", serif;
   font-weight: 300;
   -webkit-transition: all .1s ease-in-out;
@@ -1127,7 +1127,7 @@ nav li {
   .btn-info:focus, .main-nav >
   .btn-warning:focus, .main-nav >
   .btn-danger:focus, .main-nav > .btn-disabled:focus {
-    color: #aaa; }
+    color: #e5e5e5; }
 
 .main-nav > .github {
   display: block;
