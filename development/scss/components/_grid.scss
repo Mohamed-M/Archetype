@@ -80,6 +80,8 @@ $gutter: 1em;
 
 @media (max-width: 768px) {
 	[class^="col-"] {
-		width: 100%;
+    width: 100%;
+    
+    margin-bottom: 0.5em;
 	}
 }
